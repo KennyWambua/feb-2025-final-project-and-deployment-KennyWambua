@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Blog - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Apex Blog</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>Welcome to Apex Blog</h1>
+            <p>Your source for the latest blogs in web development and technology</p>
+        </section>
+
+        <section id="blog-posts">
+            <h2>Latest Posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <h3>Getting Started with JavaScript</h3>
+                    <p>Learn the basics of JavaScript and how to use it to create interactive web applications.</p>
+                    <a href="pages/post.html?id=1" class="read-more">Read More</a>
+                </article>
+                <article class="post-card">
+                    <h3>Introduction to CSS Flexbox</h3>
+                    <p>Discover how to use CSS Flexbox to create responsive layouts for your web projects.</p>
+                    <a href="pages/post.html?id=2" class="read-more">Read More</a>
+                </article>
+                <article class="post-card">
+                    <h3>Understanding HTML5 Semantic Elements</h3>
+                    <p>Explore the importance of semantic HTML elements and how they improve accessibility and SEO.</p>
+                    <a href="pages/post.html?id=3" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="add-post" class="add-post-section">
+            <h2>Share Your Thoughts</h2>
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" placeholder="Enter post title" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Content:</label>
+                    <textarea id="post-content" placeholder="Write your post content here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Publish Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Apex Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html> 
